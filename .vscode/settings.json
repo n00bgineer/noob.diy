@@ -7,5 +7,20 @@
   },
   "[prisma]": {
     "editor.formatOnSave": true
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true, // Add other directories as needed
+    "**/.git": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules": true,
+    "**/dist": true, // Add other directories as needed
+    "**/.git": true
   }
 }

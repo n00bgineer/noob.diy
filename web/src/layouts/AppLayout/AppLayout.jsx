@@ -6,13 +6,11 @@ import LightTheme from 'src/themes/lightTheme'
 
 const AppLayout = ({ children }) => {
     return (
-        <ThemeProvider theme={LightTheme}>
-            <AppLayoutContainer>
-                <Header />
-                {children}
-                <Footer />
-            </AppLayoutContainer>
-        </ThemeProvider>
+        <AppLayoutContainer>
+            <Header />
+            {children}
+            <Footer />
+        </AppLayoutContainer>
     )
 }
 

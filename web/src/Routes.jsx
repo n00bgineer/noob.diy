@@ -17,6 +17,7 @@ const Routes = () => {
                     <Route path="/" page={HomePage} name="home" />
                     <Route path="/feed" page={FeedPage} name="feed" />
                 </Set>
+                <Route path="/login" page={LoginPage} name="login" />
                 <Route notfound page={NotFoundPage} />
             </Router>
         </ThemeProvider>

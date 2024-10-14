@@ -43,6 +43,11 @@ const Header = () => {
             }`,
             selected: pathname === routes.feed(),
         },
+        {
+            route: routes.login(),
+            name: 'Login',
+            className: 'link',
+        },
     ]
 
     // METHODS

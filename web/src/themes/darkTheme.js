@@ -3,6 +3,9 @@ import { createTheme } from '@mui/material/styles'
 
 // DARK THEME
 const DarkTheme = createTheme({
+    shape: {
+        borderRadius: '8px',
+    },
     palette: {
         mode: 'dark',
         primary: {

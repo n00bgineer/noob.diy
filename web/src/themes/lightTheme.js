@@ -3,6 +3,9 @@ import { createTheme } from '@mui/material/styles'
 
 // LIGHT THEME
 const LightTheme = createTheme({
+    shape: {
+        borderRadius: '8px',
+    },
     palette: {
         mode: 'light',
         primary: {

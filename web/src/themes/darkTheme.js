@@ -18,6 +18,7 @@ const DarkTheme = createTheme({
             700: 'rgba(224, 224, 224, 0.7)',
             800: 'rgba(224, 224, 224, 0.8)',
             900: 'rgba(224, 224, 224, 0.9)',
+            contrastText: '#000',
         },
         grey: {
             main: '#EDE7E3',

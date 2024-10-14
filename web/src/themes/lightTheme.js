@@ -6,8 +6,8 @@ const LightTheme = createTheme({
     palette: {
         mode: 'light',
         primary: {
-            main: '#000000', // Pure black
-            dark: '#000000', // Same for dark
+            main: '#000000',
+            dark: '#000000',
             50: 'rgba(0, 0, 0, 0.05)',
             100: 'rgba(0, 0, 0, 0.1)',
             200: 'rgba(0, 0, 0, 0.2)',
@@ -18,6 +18,7 @@ const LightTheme = createTheme({
             700: 'rgba(0, 0, 0, 0.7)',
             800: 'rgba(0, 0, 0, 0.8)',
             900: 'rgba(0, 0, 0, 0.9)',
+            contrastText: '#E0E0E0',
         },
         grey: {
             main: '#EDE7E3',

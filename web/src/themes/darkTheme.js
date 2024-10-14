@@ -76,8 +76,8 @@ const DarkTheme = createTheme({
             900: 'rgba(211,47,47,0.9)',
         },
         background: {
-            default: 'rgb(39 39 42)',
-            paper: 'rgb(24 24 27)',
+            paper: '#424242',
+            default: '#303030',
         },
     },
     typography: {

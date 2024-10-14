@@ -76,8 +76,8 @@ const LightTheme = createTheme({
             900: 'rgba(211,47,47,0.9)',
         },
         background: {
-            paper: '#fff',
-            default: '#FFFACD',
+            paper: '#FFF',
+            default: '#FFF',
         },
     },
     typography: {

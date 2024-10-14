@@ -6,18 +6,18 @@ const LightTheme = createTheme({
     palette: {
         mode: 'light',
         primary: {
-            main: '#FFA07A',
-            dark: 'rgb(255, 99, 71)',
-            50: 'rgba(255, 99, 71, 0.05)',
-            100: 'rgba(255, 99, 71, 0.1)',
-            200: 'rgba(255, 99, 71, 0.2)',
-            300: 'rgba(255, 99, 71, 0.3)',
-            400: 'rgba(255, 99, 71, 0.4)',
-            500: 'rgba(255, 99, 71, 0.5)',
-            600: 'rgba(255, 99, 71, 0.6)',
-            700: 'rgba(255, 99, 71, 0.7)',
-            800: 'rgba(255, 99, 71, 0.8)',
-            900: 'rgba(255, 99, 71, 0.9)',
+            main: '#000000', // Pure black
+            dark: '#000000', // Same for dark
+            50: 'rgba(0, 0, 0, 0.05)',
+            100: 'rgba(0, 0, 0, 0.1)',
+            200: 'rgba(0, 0, 0, 0.2)',
+            300: 'rgba(0, 0, 0, 0.3)',
+            400: 'rgba(0, 0, 0, 0.4)',
+            500: 'rgba(0, 0, 0, 0.5)',
+            600: 'rgba(0, 0, 0, 0.6)',
+            700: 'rgba(0, 0, 0, 0.7)',
+            800: 'rgba(0, 0, 0, 0.8)',
+            900: 'rgba(0, 0, 0, 0.9)',
         },
         grey: {
             main: '#EDE7E3',
@@ -81,34 +81,34 @@ const LightTheme = createTheme({
         },
     },
     typography: {
-        fontFamily: 'JetBrains Mono',
+        fontFamily: '"JetBrains Mono", serif',
+        fontSize: 16,
         h1: {
-            fontFamily: 'JetBrains Mono',
+            fontFamily: '"JetBrains Mono", serif',
         },
         h2: {
-            fontFamily: 'JetBrains Mono',
+            fontFamily: '"JetBrains Mono", serif',
         },
         h3: {
-            fontFamily: 'JetBrains Mono',
+            fontFamily: '"JetBrains Mono", serif',
         },
         h4: {
-            fontFamily: 'JetBrains Mono',
+            fontFamily: '"JetBrains Mono", serif',
         },
         h5: {
-            fontFamily: 'JetBrains Mono',
+            fontFamily: '"JetBrains Mono", serif',
         },
         h6: {
-            fontFamily: 'JetBrains Mono',
+            fontFamily: '"JetBrains Mono", serif',
         },
         body1: {
-            fontFamily: 'JetBrains Mono',
+            fontFamily: '"JetBrains Mono", serif',
             fontSize: 16,
         },
         body2: {
-            fontFamily: 'JetBrains Mono',
+            fontFamily: '"JetBrains Mono", serif',
             fontSize: 14,
         },
-        fontSize: 16,
     },
 })
 

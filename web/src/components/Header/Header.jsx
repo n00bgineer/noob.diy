@@ -9,9 +9,9 @@ import {
 import HeaderContainer from './HeaderContainer'
 import { Link as RouterLink, routes, useLocation } from '@redwoodjs/router'
 import AppLogo from 'src/assets/logo.png'
-import useStore from 'src/state/store'
 import { DarkMode, LightMode, Menu as MenuIcon } from '@mui/icons-material'
 import { useState } from 'react'
+import { usePersistentStore } from 'src/state/store'
 
 const Header = () => {
     // SETTING HOOKS
@@ -19,7 +19,7 @@ const Header = () => {
     const isMobileViewport = useMediaQuery('(min-width:900px)')
 
     // ACCESING GLOBAL STATES
-    const { isDarkMode, toggleDarkMode } = useStore() || {}
+    const { isDarkMode, toggleDarkMode } = usePersistentStore() || {}
 
     // SETTING LOCAL STATES
     const [anchorEl, setAnchorEl] = useState(null)

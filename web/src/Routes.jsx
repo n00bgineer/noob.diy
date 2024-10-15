@@ -2,12 +2,12 @@ import { Router, Route, Set } from '@redwoodjs/router'
 import AppLayout from './layouts/AppLayout/AppLayout'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import LightTheme from './themes/lightTheme'
-import useStore from './state/store'
 import DarkTheme from './themes/darkTheme'
+import { usePersistentStore } from './state/store'
 
 const Routes = () => {
     // ACCESING GLOBAL STORE
-    const { isDarkMode } = useStore() || {}
+    const { isDarkMode } = usePersistentStore() || {}
 
     return (
         <ThemeProvider theme={isDarkMode ? DarkTheme : LightTheme}>

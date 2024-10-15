@@ -113,6 +113,11 @@ const DarkTheme = createTheme({
             fontFamily: '"JetBrains Mono", serif',
             fontSize: 14,
         },
+        body3: {
+            fontFamily: '"JetBrains Mono", serif',
+            fontSize: 12,
+            display: 'block',
+        },
     },
 })
 

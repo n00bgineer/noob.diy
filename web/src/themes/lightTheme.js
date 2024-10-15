@@ -24,18 +24,18 @@ const LightTheme = createTheme({
             contrastText: '#E0E0E0',
         },
         grey: {
-            main: '#EDE7E3',
-            dark: '#aba59f',
-            50: '#fbf8f7',
-            100: '#f4eee9',
-            200: '#ebe7e4',
-            300: '#dcc0b8',
-            400: '#d1a9a0',
-            500: '#c5938a',
-            600: '#b87c73',
-            700: '#ac665c',
-            800: '#a05045',
-            900: '#93392e',
+            main: '#9E9E9E', // Standard grey
+            dark: '#616161', // Dark grey
+            50: '#FAFAFA', // Lightest grey
+            100: '#F5F5F5', // Very light grey
+            200: '#EEEEEE', // Light grey
+            300: '#E0E0E0', // Medium light grey
+            400: '#BDBDBD', // Medium grey
+            500: '#9E9E9E', // Standard grey
+            600: '#757575', // Medium dark grey
+            700: '#616161', // Dark grey
+            800: '#424242', // Darker grey
+            900: '#212121', // Darkest grey
         },
         info: {
             main: 'rgba(2,136,209,1)',
@@ -112,6 +112,15 @@ const LightTheme = createTheme({
         body2: {
             fontFamily: '"JetBrains Mono", serif',
             fontSize: 14,
+        },
+        body3: {
+            fontFamily: '"JetBrains Mono", serif',
+            fontSize: 12,
+        },
+        body3: {
+            fontFamily: '"JetBrains Mono", serif',
+            fontSize: 12,
+            display: 'block',
         },
     },
 })

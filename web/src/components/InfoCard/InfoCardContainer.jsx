@@ -10,7 +10,7 @@ const InfoCardContainer = styled(Card)(({ theme }) => ({
         border: `1px solid ${theme.palette.divider}`,
 
         '&.card-title': {
-            marginBottom: theme.spacing(4),
+            marginBottom: theme.spacing(3),
         },
         '&.card-small': {
             height: '120px',

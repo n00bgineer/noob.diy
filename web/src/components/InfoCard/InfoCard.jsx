@@ -6,6 +6,8 @@ import { colorToRGBA } from 'src/utils/functions'
  * @name InforCard
  * @description INFORMATION CARD COMPONENT
  * @param {*} logo CARD IMAGE OR LOGO SHOWING
+ * @param {*} logoAlt ALT TEXT FOR CARD's LOGO
+ * @param {*} link CARD LINK
  * @param {*} title CARD TITLE
  * @param {*} description CARD DESCRIPTION
  * @param {*} color CARD COLOR
@@ -19,6 +21,7 @@ import { colorToRGBA } from 'src/utils/functions'
 const InfoCard = ({
     logo,
     logoAlt = 'Card logo',
+    link,
     title,
     ctaText,
     ctaLink,
@@ -82,6 +85,13 @@ const InfoCard = ({
             sx={cardSx}
             elevation={1}
             className={cardClasses.join(' ')}
+            {...(link
+                ? {
+                      component: 'a',
+                      href: link,
+                      target: '_blank',
+                  }
+                : {})}
         >
             <Box>
                 {logo && <img src={logo} alt={logoAlt} className="card-logo" />}

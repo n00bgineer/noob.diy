@@ -23,6 +23,21 @@ const DarkTheme = createTheme({
             900: 'rgba(224, 224, 224, 0.9)',
             contrastText: '#000',
         },
+        secondary: {
+            main: '#000000',
+            dark: '#000000',
+            50: 'rgba(0, 0, 0, 0.05)',
+            100: 'rgba(0, 0, 0, 0.1)',
+            200: 'rgba(0, 0, 0, 0.2)',
+            300: 'rgba(0, 0, 0, 0.3)',
+            400: 'rgba(0, 0, 0, 0.4)',
+            500: 'rgba(0, 0, 0, 0.5)',
+            600: 'rgba(0, 0, 0, 0.6)',
+            700: 'rgba(0, 0, 0, 0.7)',
+            800: 'rgba(0, 0, 0, 0.8)',
+            900: 'rgba(0, 0, 0, 0.9)',
+            contrastText: '#E0E0E0',
+        },
         grey: {
             main: '#9E9E9E', // Standard grey
             dark: '#616161', // Dark grey

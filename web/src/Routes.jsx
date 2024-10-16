@@ -14,7 +14,7 @@ const Routes = () => {
             <CssBaseline />
             <Router>
                 <Set wrap={AppLayout}>
-                    <Route path="/" page={HomePage} name="home" />
+                    <Route path="/" page={HomePage} name="home" prerender />
                     <Route path="/feed" page={FeedPage} name="feed" />
                 </Set>
                 <Route path="/login" page={LoginPage} name="login" />

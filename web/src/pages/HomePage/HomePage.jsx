@@ -10,8 +10,37 @@ import TwitterLogo from 'src/assets/twitter.jpeg'
 import LinkedinLogo from 'src/assets/linkedin.jpeg'
 import InstagramLogo from 'src/assets/instagram.jpeg'
 import InfoCard from 'src/components/InfoCard/InfoCard'
+import GitHubCalendar from 'react-github-calendar'
+import { usePersistentStore } from 'src/state/store'
 
 const HomePage = () => {
+    // GETTING GLOBAL STATES
+    const { isDarkMode } = usePersistentStore() || {}
+
+    // SETTING METHODS
+    /**
+     * @name transformGithubContributionsData
+     * @description METHOD TO TRANSFORM GH CONTRIBUTIONS DATA
+     * @param {*} contributions CONTRIBUTIONS DATA
+     * @returns {Array} TRANSFORMED CONTRIBUTIONS DATA
+     */
+    const transformGithubContributionsData = (contributions) => {
+        const currentYear = new Date().getFullYear()
+        const currentMonth = new Date().getMonth()
+        const shownMonths = 3
+
+        return contributions.filter((activity) => {
+            const date = new Date(activity.date)
+            const monthOfDay = date.getMonth()
+
+            return (
+                date.getFullYear() === currentYear &&
+                monthOfDay > currentMonth - shownMonths &&
+                monthOfDay <= currentMonth
+            )
+        })
+    }
+
     return (
         <>
             <Metadata title="Home" description="Home page" />
@@ -62,7 +91,18 @@ const HomePage = () => {
                         ctaLink="https://github.com/n00bgineer"
                         hasPadding={true}
                         width="50"
-                    />
+                    >
+                        <GitHubCalendar
+                            username="n00bgineer"
+                            transformData={transformGithubContributionsData}
+                            blockMargin={6}
+                            blockSize={12}
+                            hideTotalCount={true}
+                            hideMonthLabels={true}
+                            hideColorLegend={true}
+                            colorScheme={isDarkMode ? 'dark' : 'light'}
+                        />
+                    </InfoCard>
                 </Box>
                 <Box className="card-horizontal-container" sx={{ mb: '32px' }}>
                     <InfoCard

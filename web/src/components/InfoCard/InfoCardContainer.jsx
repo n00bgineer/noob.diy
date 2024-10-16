@@ -3,8 +3,8 @@ import { Card, styled } from '@mui/material'
 const InfoCardContainer = styled(Card)(({ theme }) => ({
     '&.MuiCard-root.card': {
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'flex-start',
         borderRadius: theme.spacing(3),
         border: `1px solid ${theme.palette.divider}`,
@@ -13,13 +13,13 @@ const InfoCardContainer = styled(Card)(({ theme }) => ({
             marginBottom: theme.spacing(3),
         },
         '&.card-small': {
-            height: '120px',
+            height: '100px',
         },
         '&.card-normal': {
-            height: '220px',
+            height: '200px',
         },
         '&.card-large': {
-            height: '320px',
+            height: '300px',
         },
         '&.card-padding': {
             padding: theme.spacing(3),
@@ -58,7 +58,7 @@ const InfoCardContainer = styled(Card)(({ theme }) => ({
         },
         '& .card-description': {
             fontWeight: '400',
-            color: theme.palette.grey[600],
+            color: theme.palette.primary[700],
             marginBottom: '0.75rem',
             display: 'block',
             whiteSpace: 'pre-wrap',

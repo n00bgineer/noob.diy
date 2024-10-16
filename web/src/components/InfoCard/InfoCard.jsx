@@ -127,7 +127,7 @@ const InfoCard = ({
                     </Button>
                 )}
             </Box>
-            <Box>{children}</Box>
+            {children}
         </InfoCardContainer>
     )
 }

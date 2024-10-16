@@ -20,6 +20,7 @@
     "@redwoodjs/web": "8.4.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-github-calendar": "^4.4.1",
     "zustand": "^5.0.0-rc.2"
   },
   "devDependencies": {

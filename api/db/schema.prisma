@@ -1,11 +1,5 @@
-// Don't forget to tell Prisma about your edits to this file using
-// `yarn rw prisma migrate dev` or `yarn rw prisma db push`.
-// `migrate` is like committing while `push` is for prototyping.
-// Read more about both here:
-// https://www.prisma.io/docs/orm/prisma-migrate
-
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -15,7 +9,7 @@ generator client {
 }
 
 model Post {
-  id          String   @id @default(uuid()) // UNIQUE IDENTIFIER FOR EACH POST
+  id          String   @id @default(cuid()) // UNIQUE IDENTIFIER FOR EACH POST
   content     String   // CONTENT OF THE POST
   slug        String   @unique // URL-FRIENDLY IDENTIFIER
   createdAt   DateTime @default(now())
@@ -24,7 +18,7 @@ model Post {
 }
 
 model DeletedPost {
-  id          String   @id @default(uuid()) // UNIQUE IDENTIFIER FOR EACH DELETED POST
+  id          String   @id @default(cuid()) // UNIQUE IDENTIFIER FOR EACH DELETED POST
   content     String   // CONTENT OF THE POST
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt

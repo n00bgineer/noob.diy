@@ -35,19 +35,19 @@ const Header = () => {
             }`,
             selected: pathname === routes.home(),
         },
-        // {
-        //     route: routes.feed(),
-        //     name: 'Feed',
-        //     className: `${
-        //         pathname === routes.feed() ? 'link link-selected' : 'link'
-        //     }`,
-        //     selected: pathname === routes.feed(),
-        // },
-        // {
-        //     route: routes.login(),
-        //     name: 'Login',
-        //     className: 'link',
-        // },
+        {
+            route: routes.feed(),
+            name: 'Feed',
+            className: `${
+                pathname === routes.feed() ? 'link link-selected' : 'link'
+            }`,
+            selected: pathname === routes.feed(),
+        },
+        {
+            route: routes.login(),
+            name: 'Login',
+            className: 'link',
+        },
     ]
 
     // METHODS
@@ -78,7 +78,7 @@ const Header = () => {
                 <IconButton onClick={() => toggleDarkMode()}>
                     {isDarkMode ? <DarkMode /> : <LightMode />}
                 </IconButton>
-                {/* {!isMobileViewport ? (
+                {!isMobileViewport ? (
                     <>
                         <IconButton onClick={handleOpenNavigationMenu}>
                             <MenuIcon />
@@ -125,7 +125,7 @@ const Header = () => {
                             </Link>
                         )
                     })
-                )} */}
+                )}
             </Box>
         </HeaderContainer>
     )

@@ -34,7 +34,7 @@ export const Empty = () => {
                 className="page-body-non-success-image"
             />
             <Typography variant="h5" className="title">
-                No posts found
+                Zero posts
             </Typography>
             <Typography variant="body2" className="description">
                 Please check again later

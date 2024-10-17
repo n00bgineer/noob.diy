@@ -1,7 +1,7 @@
 import DeletedPosts from 'src/components/DeletedPost/DeletedPosts'
 import PostsSkeleton from 'src/components/Skeleton/PostsSkeleton/PostsSkeleton'
-import EmptyImage from 'src/assets/logo.png'
-import FailureImage from 'src/assets/Failure.png'
+import EmptyImage from 'src/assets/Empty1.png'
+import FailureImage from 'src/assets/Failure1.png'
 import { Box, Typography } from '@mui/material'
 
 export const QUERY = gql`
@@ -34,12 +34,10 @@ export const Empty = () => {
                 className="page-body-non-success-image"
             />
             <Typography variant="h5" className="title">
-                No deleted posts found
+                Zero deleted posts
             </Typography>
             <Typography variant="body2" className="description">
-                Your deleted posts will be retained for 30 days
-                <br />
-                (unless you deleted them first)
+                Deleted posts will be retained for 30 days
             </Typography>
         </Box>
     )

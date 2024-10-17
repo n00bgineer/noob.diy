@@ -34,7 +34,8 @@ const PageContainer = styled(Box)(({ theme }) => ({
         },
 
         '& .page-body-non-success-image': {
-            width: '250px',
+            width: '200px',
+            marginBottom: theme.spacing(2),
         },
 
         '& .link': {

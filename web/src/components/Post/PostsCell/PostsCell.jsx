@@ -1,8 +1,8 @@
-import { Box, Link, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import Posts from 'src/components/Post/Posts'
 import PostsSkeleton from 'src/components/Skeleton/PostsSkeleton/PostsSkeleton'
 import EmptyImage from 'src/assets/Empty.png'
-import FailureImage from 'src/assets/Failure.png'
+import FailureImage from 'src/assets/Failure1.png'
 
 export const QUERY = gql`
     query FindPosts {
@@ -34,7 +34,7 @@ export const Empty = () => {
                 className="page-body-non-success-image"
             />
             <Typography variant="h5" className="title">
-                No content found
+                No posts found
             </Typography>
             <Typography variant="body2" className="description">
                 Please check again later

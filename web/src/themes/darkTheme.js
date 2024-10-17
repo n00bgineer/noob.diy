@@ -1,4 +1,3 @@
-// IMPORTING PACKAGES/MODULES
 import { createTheme } from '@mui/material/styles'
 
 // DARK THEME

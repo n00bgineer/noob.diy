@@ -24,9 +24,12 @@ const PageContainer = styled(Box)(({ theme }) => ({
 
             '&> .title': {
                 fontWeight: '600',
+                textAlign: 'center',
             },
             '&> .description': {
                 fontWeight: '400',
+                textAlign: 'center',
+                marginTop: theme.spacing(0.5),
             },
         },
 

@@ -1,8 +1,8 @@
-import { Box, Typography } from '@mui/material'
-import { Link, routes } from '@redwoodjs/router'
-import PageHeader from 'src/components/PageHeader/PageHeader'
-
+import { Box, Link, Typography } from '@mui/material'
 import Posts from 'src/components/Post/Posts'
+import PostsSkeleton from 'src/components/Skeleton/PostsSkeleton/PostsSkeleton'
+import EmptyImage from 'src/assets/Empty.png'
+import FailureImage from 'src/assets/Failure.png'
 
 export const QUERY = gql`
     query FindPosts {
@@ -17,41 +17,46 @@ export const QUERY = gql`
     }
 `
 
-export const Loading = () => (
-    <Box className="page">
-        <PageHeader title="Feed" />
-        <Box className="page-body page-body-non-success-cell">
-            <Typography>Loading</Typography>
-        </Box>
-    </Box>
-)
-
-export const Empty = () => {
+export const Loading = () => {
     return (
-        <Box className="page">
-            <PageHeader title="Feed" />
-            <Box className="page-body page-body-non-success-cell">
-                <div className="rw-text-center">
-                    No posts yet.{' '}
-                    <Link to={routes.newPost()} className="rw-link">
-                        Create one?
-                    </Link>
-                </div>
-            </Box>
+        <Box className="page-body">
+            <PostsSkeleton />
         </Box>
     )
 }
 
-export const Failure = ({ error }) => (
-    <Box className="page">
-        <PageHeader title="Feed" />
+export const Empty = () => {
+    return (
         <Box className="page-body page-body-non-success-cell">
-            <Typography>Something went wrong</Typography>
-            <Typography>{error?.message}</Typography>
+            <img
+                src={EmptyImage}
+                alt="Empty image"
+                className="page-body-non-success-image"
+            />
+            <Typography variant="h5" className="title">
+                No content found
+            </Typography>
+            <Typography variant="body2" className="description">
+                Please check again later
+            </Typography>
         </Box>
+    )
+}
+
+export const Failure = () => (
+    <Box className="page-body page-body-non-success-cell">
+        <img
+            src={FailureImage}
+            alt="Empty image"
+            className="page-body-non-success-image"
+        />
+        <Typography variant="h5" className="title">
+            Something went wrong
+        </Typography>
+        <Typography variant="body2" className="description">
+            Please refresh or check again later
+        </Typography>
     </Box>
 )
 
-export const Success = ({ posts }) => {
-    return <Posts posts={posts} />
-}
+export const Success = ({ posts }) => <Posts posts={posts} />

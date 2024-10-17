@@ -3,15 +3,15 @@ export const standard = defineScenario({
         one: {
             data: {
                 content: 'String',
-                updatedAt: '2024-10-17T14:37:52.446Z',
-                slug: 'String2655892',
+                updatedAt: '2024-10-17T14:41:36.154Z',
+                slug: 'String7139571',
             },
         },
         two: {
             data: {
                 content: 'String',
-                updatedAt: '2024-10-17T14:37:52.446Z',
-                slug: 'String131663',
+                updatedAt: '2024-10-17T14:41:36.154Z',
+                slug: 'String2995283',
             },
         },
     },

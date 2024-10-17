@@ -31,14 +31,14 @@ describe('deletedPosts', () => {
         const result = await createDeletedPost({
             input: {
                 content: 'String',
-                updatedAt: '2024-10-17T14:37:52.438Z',
-                slug: 'String4497686',
+                updatedAt: '2024-10-17T14:41:36.142Z',
+                slug: 'String8161005',
             },
         })
 
         expect(result.content).toEqual('String')
-        expect(result.updatedAt).toEqual(new Date('2024-10-17T14:37:52.438Z'))
-        expect(result.slug).toEqual('String4497686')
+        expect(result.updatedAt).toEqual(new Date('2024-10-17T14:41:36.142Z'))
+        expect(result.slug).toEqual('String8161005')
     })
 
     scenario('updates a deletedPost', async (scenario) => {

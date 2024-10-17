@@ -18,8 +18,9 @@ const Routes = () => {
                 <Set wrap={ScaffoldLayout} title="DeletedPosts" titleTo="deletedPosts" buttonLabel="New DeletedPost" buttonTo="newDeletedPost">
                     <Route path="/deleted-posts/new" page={DeletedPostNewDeletedPostPage} name="newDeletedPost" />
                     <Route path="/deleted-posts/{id}/edit" page={DeletedPostEditDeletedPostPage} name="editDeletedPost" />
-                    <Route path="/deleted-posts/{id}" page={DeletedPostDeletedPostPage} name="deletedPost" />
                     <Route path="/deleted-posts" page={DeletedPostDeletedPostsPage} name="deletedPosts" />
+                </Set>
+                <Set wrap={ScaffoldLayout} title="DeletedPosts" titleTo="deletedPosts" buttonLabel="New DeletedPost" buttonTo="newDeletedPost">
                 </Set>
                 <Set wrap={ScaffoldLayout} title="Posts" titleTo="posts" buttonLabel="New Post" buttonTo="newPost">
                     <Route path="/posts/new" page={PostNewPostPage} name="newPost" />

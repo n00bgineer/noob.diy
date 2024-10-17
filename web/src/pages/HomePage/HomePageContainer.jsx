@@ -19,9 +19,10 @@ const HomePageContainer = styled(Box)(({ theme }) => ({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'flex-start',
-            gap: theme.spacing(3),
+            gap: theme.spacing(6),
             width: '100%',
             flexWrap: 'wrap',
+            marginBottom: theme.spacing(1),
         },
 
         '& .full-image': {
@@ -45,7 +46,7 @@ const HomePageContainer = styled(Box)(({ theme }) => ({
         },
     },
 
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.down('md')]: {
         '&.MuiBox-root': {
             marginTop: theme.spacing(8),
             marginBottom: theme.spacing(5),
@@ -64,10 +65,9 @@ const HomePageContainer = styled(Box)(({ theme }) => ({
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'flex-start',
-                gap: theme.spacing(6),
+                gap: theme.spacing(3),
                 width: '100%',
                 flexWrap: 'wrap',
-                marginBottom: theme.spacing(1),
             },
 
             '& .full-image': {

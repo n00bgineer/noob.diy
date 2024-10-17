@@ -10,7 +10,6 @@ export const schema = gql`
 
     type Query {
         deletedPosts: [DeletedPost!]! @requireAuth
-        deletedPost(id: String!): DeletedPost @requireAuth
     }
 
     type Mutation {

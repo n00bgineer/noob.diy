@@ -17,7 +17,7 @@ const Post = ({ post }) => {
     const [deletePost] = useMutation(DELETE_POST_MUTATION, {
         onCompleted: () => {
             toast.success('Post deleted')
-            navigate(routes.posts())
+            navigate(routes.feed())
         },
         onError: (error) => {
             toast.error(error.message)

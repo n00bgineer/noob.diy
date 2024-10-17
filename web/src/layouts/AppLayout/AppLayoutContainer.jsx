@@ -7,6 +7,12 @@ const AppLayoutContainer = styled(Box)(({ theme }) => ({
         marginRight: 'auto',
         padding: theme.spacing(2),
         boxSizing: 'border-box',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        alignItems: 'stretch',
+        overflow: 'auto',
     },
 }))
 

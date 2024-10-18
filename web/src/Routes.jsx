@@ -18,7 +18,7 @@ const Routes = () => {
                 <Set wrap={AppLayout}>
                     <Route path="/" page={HomePage} name="home" prerender />
                     <Route path="/feed" page={PostPostsPage} name="feed" />
-                    <Route path="/post/new" page={PostNewPostPage} name="newPost" />
+                    <Route path="/post/create" page={PostNewPostPage} name="newPost" />
                     <Route path="/post/{id}/edit" page={PostEditPostPage} name="editPost" />
                     <Route path="/post/{id}" page={PostPostPage} name="post" />
                 </Set>

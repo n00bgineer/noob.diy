@@ -7,7 +7,7 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
         justifyContent: 'space-between',
         alignItems: 'center',
 
-        '&> .appLogo': {
+        '& .appLogo': {
             width: theme.spacing(8),
         },
         '&> .cta-container': {

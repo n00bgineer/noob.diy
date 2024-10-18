@@ -25,7 +25,7 @@ const CustomMDXEditor = ({
     ...props
 }) => {
     return (
-        <CustomMDXEditorContainer elevation={0}>
+        <CustomMDXEditorContainer>
             <MDXEditor
                 markdown={value}
                 onBlur={onBlur}
@@ -49,7 +49,7 @@ const CustomMDXEditor = ({
                         ),
                     }),
                 ]}
-                contentEditableClassName="mdx-editor"
+                contentEditableClassName="mdxeditor-contenteditable"
                 {...props}
             />
             {helperText && (

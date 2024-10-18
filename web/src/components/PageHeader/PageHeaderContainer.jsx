@@ -5,7 +5,7 @@ const PageHeaderContainer = styled(Box)(({ theme }) => ({
         width: '100%',
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         marginTop: theme.spacing(3),
 
         '&> .title-container': {

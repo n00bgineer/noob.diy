@@ -18,6 +18,9 @@ const PageHeaderContainer = styled(Box)(({ theme }) => ({
             '&> .title': {
                 fontWeight: '700',
             },
+            '&> .description': {
+                marginTop: theme.spacing(0.5),
+            },
         },
 
         '&> .children-container': {

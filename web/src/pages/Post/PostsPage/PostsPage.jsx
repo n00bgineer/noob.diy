@@ -31,7 +31,7 @@ const PostsPage = () => {
                     underline="none"
                     className="link link-selected"
                 >
-                    Post
+                    Create post
                 </Link>
             }
         >

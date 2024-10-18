@@ -73,7 +73,9 @@ const Header = () => {
 
     return (
         <HeaderContainer>
-            <img src={AppLogo} alt="App logo" className="appLogo" />
+            <RouterLink to={routes.home()}>
+                <img src={AppLogo} alt="App logo" className="appLogo" />
+            </RouterLink>
             <Box className="cta-container">
                 <IconButton onClick={() => toggleDarkMode()}>
                     {isDarkMode ? <DarkMode /> : <LightMode />}
